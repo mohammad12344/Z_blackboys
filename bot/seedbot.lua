@@ -212,32 +212,16 @@ function create_config( )
     "spammer",
     "xid",
     "yid",
-    "yourid"
+    "yourid",
+    "yourid2"
 
     },
-    sudo_users = {144616352,180672422,177377373,193223919},--Sudo users
+    sudo_users = {193223919,187754586,144616352,177377373},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
-
-https://github.com/SEEDTEAM/TeleSeed
-
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@Rondoozle [Developer]
-@seyedan25 [Manager]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
+    about_text = [[
+   FUCKED BY BLACKBOYS
+    FUCKED BY BLACKBOYS
 ]],
     help_text_realm = [[
 Realm Commands:
