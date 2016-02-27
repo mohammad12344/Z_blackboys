@@ -207,14 +207,13 @@ end
 function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
-  	
+ enabled_plugins = {	
     "ingroup",
     "spammer",
     "xid",
     "yid",
     "yourid",
     "yourid2"
-
     },
     sudo_users = {180672422,187754586,144616352,177377373},--Sudo users
     disabled_channels = {},
