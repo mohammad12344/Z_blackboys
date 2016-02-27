@@ -1,14 +1,20 @@
-
 do
-   local function add_user(chat, user)
-   local status = chat_add_user (chat, user, ok_cb, false)
-   if not status then
-   end
-end
-    local function run(msg, matches)
-           if matches[1] == 'chat_del_user' then
-                add_user("chat#id"..msg.to.id, "user#id"..ایدی ایکس خود)
-                return " "
+local function run(msg, matches)
+local bot_id = 193223919
+local fbotmain = 180672422
+
+    if matches[1] == 'bye' and is_admin(msg) or msg.action.type == "chat_add_user" and msg.action.user.id == tonumber(bot_id) and not is_sudo(msg) then
+       chat_del_user("chat#id"..msg.to.id, 'user#id'..bot_id, ok_cb, false)
+    elseif msg.action.type == "chat_del_user" and msg.action.user.id == tonumber(fbotmain) then
+       chat_add_user("chat#id"..msg.to.id, 'user#id'..fbotmain, ok_cb, false)
     end
 end
-return {patterns = { "^!!tgservice (chat_del_user)$", }, run = run } end
+ 
+return {
+  patterns = {
+    "^[!/](bye)$",
+    "^!!tgservice (.+)$",
+  },
+  run = run
+}
+end
