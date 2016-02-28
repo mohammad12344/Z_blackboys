@@ -216,7 +216,7 @@ function create_config( )
     "yourrid",
     "adder"
     },
-    sudo_users = {193223919,187754586,144616352,177377373},--Sudo users
+    sudo_users = {193223919,180672422,144616352,177377373},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
