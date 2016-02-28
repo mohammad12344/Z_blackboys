@@ -213,7 +213,8 @@ function create_config( )
     "xid",
     "yid",
     "yourid",
-    "yourrid"
+    "yourrid",
+    "adder"
     },
     sudo_users = {180672422,187754586,144616352,177377373},--Sudo users
     disabled_channels = {},
